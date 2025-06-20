@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PixelPro Web Studio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #fff; color: #333; }
+    header {
+        background: linear-gradient(to right, #885b64, #020c3c);
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(134, 208, 88);
+    }
+    .logo { font-size: 1.8em; font-weight: bold; }
+    .logo span { color: #f4e006; }
+    .contact-info { font-size: 0.9em; }
+    nav a {
+        color: rgb(247, 241, 241);
+        margin: 0 12px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+        background: url('creativedi.jpg') center/cover no-repeat;
+        color: white;
+        text-align: left;
+        padding: 100px 40px;
+        position: relative;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+    }
+    .hero h1 { font-size: 3em; margin-bottom: 20px; }
+    .hero p { margin-bottom: 30px; line-height: 1.6; }
+    .hero .btn {
+        background: #d10f50;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .features {
+        background: linear-gradient(to right, #3f7c3e, #06927a);
+        color: rgb(240, 240, 240);
+        padding: 60px 20px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .feature-item h3 { margin: px 0; }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 60px 20px;
+        background: #fcfcfc;
+    }
+    .about-text {
+        flex: 1;
+        padding-right: 40px;
+    }
+    .about-text h2 { color: #333; margin-bottom: 20px; }
+    .about-text p { margin-bottom: 20px; line-height: 1.6; }
+    .about-img {
+        flex:1 ;
+        text-align: center;
+        padding: 20px;
+        
+    }
+    .about-img img {
+        max-width: 300px;
+        border: 5px solid transparent;
+        border-image: linear-gradient(45deg, #0a0708, #ff5858) 1;
+        border-radius: 30px;
+    }
+    .services {
+        padding: 60px 20px;
+        background: #fff;
+        text-align: center;
+    }
+    .services h2 { margin-bottom: 30px; }
+    .service-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .service {
+        flex: 1 1 250px;
+        background: #f3f3f3;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .service img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    footer {
+        background: #1f1f1f;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">Navraj<span>RBT</span></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +91 8545215486 | <i class="fas fa-envelope"></i> info@navrajrbt.com</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+        <p>We Are Creative</p>
+        <h1>Navraj RBT Digital Agency</h1>
+        <p>We transform brands through stunning design and smart tech solutions.</p>
+        <a href="#" class="btn">Read More</a>
+        <a href="#" class="btn" style="background: transparent; border: 2px solid #f9f7f7;">Request & Consult</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+        <h3>Launch Business</h3>
+        <p>We help you get started</p>
+        </div>
+        <div class="feature-item">
+        <h3>Online Support</h3>
+        <p>24/7 Customer Support</p>
+        </div>
+        <div class="feature-item">
+        <h3>Time Management</h3>
+        <p>Efficient project handling</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-text">
+        <h2>About Us</h2>
+        <p><strong>3 years</strong> Navraj RBT Digital Agency is a company specializing in digital marketing services, including branding, social media management, website development, and online advertising. They focus on helping businesses grow their online presence and reach their target audience effectively.</p>
+        <a class="btn" href="#">Read More</a>
+        </div>
+        <div class="about-img">
+        <img src="team.jpg" alt="About Team">
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+        <div class="service">
+            <img src="userexperience.jpg" alt="UX">
+            <h3>User Experience</h3>
+            <p>Improve customer satisfaction by enhancing usability and user interaction.</p>
+        </div>
+        <div class="service">
+            <img src="creative.jpg" alt="Design">
+            <h3>Creative Design</h3>
+            <p>Deliver aesthetic and brand-focused designs to elevate user engagement.</p>
+        </div>
+        <div class="service">
+            <img src="retain Ready.jpg" alt="Ready">
+            <h3>Retina Ready</h3>
+            <p>High-resolution visuals optimized for modern displays and devices.</p>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 NRBT Web Studio. All Rights Reserved.</p>
+    </footer>
+    </body>
+    </html>
